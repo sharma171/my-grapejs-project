@@ -1,0 +1,25 @@
+#gjs {
+    border: 3px solid #444;
+  }
+  
+  /* Reset some default styling */
+  .gjs-cv-canvas {
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  section {
+    padding: 75px;
+  }
+  .gjs-editor-cont iframe.gjs-frame {
+    margin-top: 58px;
+  }
+  .gjs-cv-canvas.gjs-no-touch-actions.gjs-cv-canvas-bg {
+    width: 80%;
+  }
+  .gjs-pn-views-container {
+    max-height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
