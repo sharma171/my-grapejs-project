@@ -141,10 +141,10 @@ const customBlocks = [
         label: '<svg data-wf-icon="AddPanelListItem64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M13 19H51V45H13L13 19ZM12 19C12 18.4477 12.4477 18 13 18H51C51.5523 18 52 18.4477 52 19V45C52 45.5523 51.5523 46 51 46H13C12.4477 46 12 45.5523 12 45V19ZM46 24H22V40H46V24ZM22 23C21.4477 23 21 23.4477 21 24V40C21 40.5523 21.4477 41 22 41H46C46.5523 41 47 40.5523 47 40V24C47 23.4477 46.5523 23 46 23H22ZM19 33C19 33.5523 18.5523 34 18 34C17.4477 34 17 33.5523 17 33C17 32.4477 17.4477 32 18 32C18.5523 32 19 32.4477 19 33Z" fill="white" fill-opacity="0.22"></path><circle cx="18" cy="24" r="1" fill="currentColor"></circle><rect x="21.5" y="23.5" width="25" height="9" rx="0.5" fill="white" fill-opacity="0.1" stroke="currentColor"></rect></svg>List-items',
         content: `<li class="list"></li>`,
       },
-      {
+      /*{
         id: 'Link-block',
         label: '<svg data-wf-icon="AddPanelLinkBlock64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17H47V47H17V17ZM16 17C16 16.4477 16.4477 16 17 16H47C47.5523 16 48 16.4477 48 17V47C48 47.5523 47.5523 48 47 48H17C16.4477 48 16 47.5523 16 47V17ZM27.3536 33.3536L28.8536 31.8536L28.1464 31.1464L26.6464 32.6464C25.3466 33.9463 25.3466 36.0537 26.6464 37.3536C27.9463 38.6534 30.0537 38.6534 31.3536 37.3536L32.8536 35.8536L32.1464 35.1464L30.6464 36.6464C29.7371 37.5558 28.2629 37.5558 27.3536 36.6464C26.4442 35.7371 26.4442 34.2629 27.3536 33.3536ZM32.6464 26.6464C33.9463 25.3466 36.0537 25.3466 37.3536 26.6464C38.6534 27.9463 38.6534 30.0537 37.3536 31.3536L35.8536 32.8536L35.1464 32.1464L36.6464 30.6464C37.5558 29.7371 37.5558 28.2629 36.6464 27.3536C35.7371 26.4442 34.2629 26.4442 33.3536 27.3536L31.8536 28.8536L31.1464 28.1464L32.6464 26.6464ZM30.3536 34.3536L34.3536 30.3536L33.6464 29.6464L29.6464 33.6464L30.3536 34.3536Z" fill="currentColor"></path></svg>Link',
-        content: `<a href="" class="link-block" data-gjs-name="a" data-gjs-type="a" data-gjs-editable="true">Link</a>
+        content: `<a href="" class="link-block" data-gjs-name="a" data-gjs-type="text" data-gjs-editable="true">Link</a>
           <style>
           .link-block{
             position: static;
@@ -160,32 +160,13 @@ const customBlocks = [
             min-width: 50px;
           }
           </style>`,
-      },
+      },*/
       {
         id: 'Button',
         label: '<svg data-wf-icon="AddPanelButton64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 21C12.2386 21 10 23.2386 10 26V38C10 40.7614 12.2386 43 15 43H49C51.7614 43 54 40.7614 54 38V26C54 23.2386 51.7614 21 49 21H15ZM20 32H44V31H20V32Z" fill="currentColor"></path></svg>Button',
         content: '',
       },
-      {
-        id: 'Link-block',
-        label: '<svg data-wf-icon="AddPanelLinkBlock64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17H47V47H17V17ZM16 17C16 16.4477 16.4477 16 17 16H47C47.5523 16 48 16.4477 48 17V47C48 47.5523 47.5523 48 47 48H17C16.4477 48 16 47.5523 16 47V17ZM27.3536 33.3536L28.8536 31.8536L28.1464 31.1464L26.6464 32.6464C25.3466 33.9463 25.3466 36.0537 26.6464 37.3536C27.9463 38.6534 30.0537 38.6534 31.3536 37.3536L32.8536 35.8536L32.1464 35.1464L30.6464 36.6464C29.7371 37.5558 28.2629 37.5558 27.3536 36.6464C26.4442 35.7371 26.4442 34.2629 27.3536 33.3536ZM32.6464 26.6464C33.9463 25.3466 36.0537 25.3466 37.3536 26.6464C38.6534 27.9463 38.6534 30.0537 37.3536 31.3536L35.8536 32.8536L35.1464 32.1464L36.6464 30.6464C37.5558 29.7371 37.5558 28.2629 36.6464 27.3536C35.7371 26.4442 34.2629 26.4442 33.3536 27.3536L31.8536 28.8536L31.1464 28.1464L32.6464 26.6464ZM30.3536 34.3536L34.3536 30.3536L33.6464 29.6464L29.6464 33.6464L30.3536 34.3536Z" fill="currentColor"></path></svg>Link',
-        content: `<a href="" class="link-block" data-gjs-name="a" data-gjs-type="text" data-gjs-editable="true">Link</a>
-          <style>
-            .link-block {
-              position: static;
-              display: block;
-              margin-top: 0%;
-              margin-left: 0%;
-              flex-grow: 0;
-              flex-shrink: 1;
-              flex-basis: auto;
-              height: auto;
-              width: auto;
-              min-height: 50px;
-              min-width: 50px;
-            }
-          </style>`,
-    }
+      
     // Add more custom blocks as needed
   ];
   

@@ -11,8 +11,8 @@
   section {
     padding: 75px;
   }
-  .gjs-frames div.gjs-frame-wrapper {
-    top: 60px !important;
+  .gjs-editor-cont iframe.gjs-frame {
+    margin-top: 58px;
   }
   .gjs-cv-canvas.gjs-no-touch-actions.gjs-cv-canvas-bg {
     width: 80%;
