@@ -25,6 +25,9 @@ const GrapeJsEditor = () => {
         category: 'Structure', // Specify the category for the blocks
         // Optionally, you can define styles for the block
         styles: block.styles,
+        tagName: block.tagName,
+        type: block.type,
+        components: block.components,
       });
     });
 

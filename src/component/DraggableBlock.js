@@ -144,7 +144,7 @@ const customBlocks = [
       {
         id: 'Link-block',
         label: '<svg data-wf-icon="AddPanelLinkBlock64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17H47V47H17V17ZM16 17C16 16.4477 16.4477 16 17 16H47C47.5523 16 48 16.4477 48 17V47C48 47.5523 47.5523 48 47 48H17C16.4477 48 16 47.5523 16 47V17ZM27.3536 33.3536L28.8536 31.8536L28.1464 31.1464L26.6464 32.6464C25.3466 33.9463 25.3466 36.0537 26.6464 37.3536C27.9463 38.6534 30.0537 38.6534 31.3536 37.3536L32.8536 35.8536L32.1464 35.1464L30.6464 36.6464C29.7371 37.5558 28.2629 37.5558 27.3536 36.6464C26.4442 35.7371 26.4442 34.2629 27.3536 33.3536ZM32.6464 26.6464C33.9463 25.3466 36.0537 25.3466 37.3536 26.6464C38.6534 27.9463 38.6534 30.0537 37.3536 31.3536L35.8536 32.8536L35.1464 32.1464L36.6464 30.6464C37.5558 29.7371 37.5558 28.2629 36.6464 27.3536C35.7371 26.4442 34.2629 26.4442 33.3536 27.3536L31.8536 28.8536L31.1464 28.1464L32.6464 26.6464ZM30.3536 34.3536L34.3536 30.3536L33.6464 29.6464L29.6464 33.6464L30.3536 34.3536Z" fill="currentColor"></path></svg>Link',
-        content: `<a href="" class="link-block" data-gjs-name="a" data-gjs-type="text" data-gjs-editable="true">Link</a>
+        content: `<a href="#hello" class="link-block" data-gjs-name="a" data-gjs-type="text" data-gjs-editable="true">Link</a>
           <style>
           .link-block{
             position: static;
@@ -164,28 +164,105 @@ const customBlocks = [
       {
         id: 'Button',
         label: '<svg data-wf-icon="AddPanelButton64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 21C12.2386 21 10 23.2386 10 26V38C10 40.7614 12.2386 43 15 43H49C51.7614 43 54 40.7614 54 38V26C54 23.2386 51.7614 21 49 21H15ZM20 32H44V31H20V32Z" fill="currentColor"></path></svg>Button',
-        content: '',
+        content: `<a href="" class="gjs-button" data-gjs-name="a" data-gjs-type="text" data-gjs-editable="true">Button Text</a>
+        <style>
+          .gjs-button {
+            display: inline-block;
+            padding: 9px 15px;
+            background-color: #3898EC;
+            color: white;
+            border: 0;
+            line-height: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 0;
+          }
+        </style>`,
       },
       {
-        id: 'Link-block',
-        label: '<svg data-wf-icon="AddPanelLinkBlock64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 17H47V47H17V17ZM16 17C16 16.4477 16.4477 16 17 16H47C47.5523 16 48 16.4477 48 17V47C48 47.5523 47.5523 48 47 48H17C16.4477 48 16 47.5523 16 47V17ZM27.3536 33.3536L28.8536 31.8536L28.1464 31.1464L26.6464 32.6464C25.3466 33.9463 25.3466 36.0537 26.6464 37.3536C27.9463 38.6534 30.0537 38.6534 31.3536 37.3536L32.8536 35.8536L32.1464 35.1464L30.6464 36.6464C29.7371 37.5558 28.2629 37.5558 27.3536 36.6464C26.4442 35.7371 26.4442 34.2629 27.3536 33.3536ZM32.6464 26.6464C33.9463 25.3466 36.0537 25.3466 37.3536 26.6464C38.6534 27.9463 38.6534 30.0537 37.3536 31.3536L35.8536 32.8536L35.1464 32.1464L36.6464 30.6464C37.5558 29.7371 37.5558 28.2629 36.6464 27.3536C35.7371 26.4442 34.2629 26.4442 33.3536 27.3536L31.8536 28.8536L31.1464 28.1464L32.6464 26.6464ZM30.3536 34.3536L34.3536 30.3536L33.6464 29.6464L29.6464 33.6464L30.3536 34.3536Z" fill="currentColor"></path></svg>Link',
-        content: `<a href="" class="link-block" data-gjs-name="a" data-gjs-type="text" data-gjs-editable="true">Link</a>
-          <style>
-            .link-block {
-              position: static;
-              display: block;
-              margin-top: 0%;
-              margin-left: 0%;
-              flex-grow: 0;
-              flex-shrink: 1;
-              flex-basis: auto;
-              height: auto;
-              width: auto;
-              min-height: 50px;
-              min-width: 50px;
-            }
-          </style>`,
-    }
+        id: 'Heading1',
+        label: '<svg data-wf-icon="AddPanelHeading64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 21V27.5M16.5 33V27.5M16.5 27.5H23.5V21V33" stroke="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 39L48 39V38L16 38V39ZM16 45L32 45V44L16 44V45Z" fill="white" fill-opacity="0.22"></path></svg>Heading 1',
+        content: `<h1 class="gjs-heading1">Heading 1</h1>
+        <style>
+        .gjs-heading1 {
+          margin-top: 0px;
+          margin-bottom: 0px;
+          color: rgb(138, 143, 160);
+          font-size: 44px;
+          line-height: 62px;
+          font-weight: 400;
+        }`
+      },
+      {
+        id: 'Heading2',
+        label: '<svg data-wf-icon="AddPanelHeading64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 21V27.5M16.5 33V27.5M16.5 27.5H23.5V21V33" stroke="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 39L48 39V38L16 38V39ZM16 45L32 45V44L16 44V45Z" fill="white" fill-opacity="0.22"></path></svg>Heading 2',
+        content: `<h2 class="gjs-heading2">Heading 2</h2>
+        <style>
+        .gjs-heading2 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 36px;
+          line-height: 50px;
+          font-weight: 400;
+        }`
+      },
+      {
+        id: 'Heading3',
+        label: '<svg data-wf-icon="AddPanelHeading64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 21V27.5M16.5 33V27.5M16.5 27.5H23.5V21V33" stroke="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 39L48 39V38L16 38V39ZM16 45L32 45V44L16 44V45Z" fill="white" fill-opacity="0.22"></path></svg>Heading 3',
+        content: `<h3 class="gjs-heading3">Heading 3</h3>
+        <style>
+        .gjs-heading3 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 30px;
+          line-height: 46px;
+          font-weight: 400;
+        }`
+      },
+      {
+        id: 'Heading4',
+        label: '<svg data-wf-icon="AddPanelHeading64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 21V27.5M16.5 33V27.5M16.5 27.5H23.5V21V33" stroke="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 39L48 39V38L16 38V39ZM16 45L32 45V44L16 44V45Z" fill="white" fill-opacity="0.22"></path></svg>Heading 4',
+        content: `<h3 class="gjs-heading4">Heading 4</h3>
+        <style>
+        .gjs-heading4 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 24px;
+          line-height: 38px;
+          font-weight: 400;
+        }`
+      },
+      {
+        id: 'Heading5',
+        label: '<svg data-wf-icon="AddPanelHeading64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 21V27.5M16.5 33V27.5M16.5 27.5H23.5V21V33" stroke="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 39L48 39V38L16 38V39ZM16 45L32 45V44L16 44V45Z" fill="white" fill-opacity="0.22"></path></svg>Heading 5',
+        content: `<h3 class="gjs-heading5">Heading 5</h3>
+        <style>
+        .gjs-heading5 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 20px;
+          line-height: 34px;
+          font-weight: 500;
+        }`
+      },
+      {
+        id: 'Heading6',
+        label: '<svg data-wf-icon="AddPanelHeading64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 21V27.5M16.5 33V27.5M16.5 27.5H23.5V21V33" stroke="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M16 39L48 39V38L16 38V39ZM16 45L32 45V44L16 44V45Z" fill="white" fill-opacity="0.22"></path></svg>Heading 6',
+        content: `<h3 class="gjs-heading6">Heading 6</h3>
+        <style>
+        .gjs-heading6 {
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 16px;
+          line-height: 28px;
+          font-weight: 500;
+        }`
+      },
+      {
+        id: 'paragraph',
+        label: '<svg data-wf-icon="AddPanelParagraph64Icon" width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M52 27H12V26H52V27ZM52 33H12V32H52V33ZM12 39L32 39V38L12 38V39Z" fill="currentColor"></path></svg>paragraph',
+        content: `<p class="gjs-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>`
+      }
     // Add more custom blocks as needed
   ];
   
