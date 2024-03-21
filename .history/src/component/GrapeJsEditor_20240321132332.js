@@ -27,6 +27,8 @@ const GrapeJsEditor = () => {
       });
     });
 
+    // Call the function to replace pre elements with CodeMirror instances
+    replacePreWithCodeMirror();
 
     return () => editor.destroy();
   }, []);
